@@ -1,1 +1,17 @@
 
+       \  |  /      [01] git config
+    - - (o) - -     [02] git init
+       /  |  \      [03] git clone
+      /   |   \     [04] git status
+
+     |    *    |    [05] git add
+     |   / \   |    [06] git commit
+     |  *   *  |    [07] git push
+     |  |   |  |    [08] git pull
+     |  *   *  |    [09] git branch
+     |   \ /   |    [10] git checkout
+     |    *    |    [11] git merge
+      \   |   /     [12] git log
+       \  |  /      [13] git diff
+    - - (o) - -     [14] git stash
+       /  |  \      [15] git reset
