@@ -1,27 +1,18 @@
-name: Pylint Check
+name: Pylint
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+on: [push]
 
 jobs:
-  pylint:
-
+  check:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Install Pylint
-        run: pip install pylint
+      - run: pip install pylint
 
-      - name: Run Pylint
-        run: pylint app.py
+      - run: pylint demo.py
